@@ -15,11 +15,12 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 2,
    "metadata": {},
    "outputs": [],
    "source": [
-    "# Your code here\n"
+    "# Your code here\n",
+    "tup = (\"I\",)"
    ]
   },
   {
@@ -33,11 +34,22 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 3,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "tuple"
+      ]
+     },
+     "execution_count": 3,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
-    "# Your code here\n"
+    "type(tup)\n"
    ]
   },
   {
@@ -55,13 +67,25 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 5,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'r'"
+      ]
+     },
+     "execution_count": 5,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
-    "# Your code here\n",
+    "tup\n",
     "\n",
-    "# Your explanation here\n"
+    "\n",
+    "# tuple does not accept new assignments\n"
    ]
   },
   {
@@ -79,11 +103,23 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 11,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "('I', 'r', 'o', 'n', 'h', 'a', 'c', 'k')"
+      ]
+     },
+     "execution_count": 11,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
-    "# Your code here\n",
+    "tup = (\"I\", \"r\",\"o\",\"n\",\"h\",\"a\",\"c\",\"k\" )\n",
+    "tup\n",
     "\n",
     "# Your explanation here\n"
    ]
@@ -103,11 +139,24 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 18,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "('I', 'r', 'o', 'n')"
+      ]
+     },
+     "execution_count": 18,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
-    "# Your code here\n"
+    "tup1 = (tup[0], tup[1], tup[2], tup[3])\n",
+    "tup2 = (tup[-4], tup[-3], tup[-2], tup[-1])\n",
+    "tup1\n"
    ]
   },
   {
@@ -121,11 +170,23 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 19,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "('I', 'r', 'o', 'n', 'h', 'a', 'c', 'k')"
+      ]
+     },
+     "execution_count": 19,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
    "source": [
-    "# Your code here\n"
+    "tup3 = tup1 + tup2\n",
+    "tup3\n"
    ]
   },
   {
@@ -137,12 +198,31 @@
   },
   {
    "cell_type": "code",
+   "execution_count": 25,
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "8\n",
+      "8\n"
+     ]
+    }
+   ],
+   "source": [
+    "len(tup1)\n",
+    "len(tup2)\n",
+    "print(len(tup1) + len(tup2))\n",
+    "print(len(tup3))"
+   ]
+  },
+  {
+   "cell_type": "code",
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-   "source": [
-    "# Your code here\n"
-   ]
+   "source": []
   },
   {
    "cell_type": "markdown",
@@ -153,11 +233,19 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 32,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "4\n"
+     ]
+    }
+   ],
    "source": [
-    "# Your code here\n"
+    "print(tup3.index(\"h\"))"
    ]
   },
   {
@@ -177,11 +265,29 @@
   },
   {
    "cell_type": "code",
-   "execution_count": null,
+   "execution_count": 33,
    "metadata": {},
-   "outputs": [],
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "True\n",
+      "wrong\n",
+      "True\n",
+      "wrong\n",
+      "wrong\n"
+     ]
+    }
+   ],
    "source": [
-    "# Your code here\n"
+    "letters = [\"a\", \"b\", \"c\", \"d\", \"e\"]\n",
+    "for letter in letters:\n",
+    "    if letter in tup3:\n",
+    "        print(\"True\")\n",
+    "    else:\n",
+    "        print(\"wrong\")\n",
+    "        \n"
    ]
   },
   {
@@ -195,12 +301,40 @@
   },
   {
    "cell_type": "code",
+   "execution_count": 43,
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "{'a': 1, 'b': 0, 'c': 1, 'd': 0, 'e': 0}"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\n",
+    "freq_lst = []\n",
+    "diction = {}\n",
+    "for letter in letters:\n",
+    "    freq_1 = 0\n",
+    "    for ltr in tup3:\n",
+    "        if letter == ltr:\n",
+    "            freq_1 += 1\n",
+    "        diction[letter] = freq_1\n",
+    "    \n",
+    "diction"
+   ]
+  },
+  {
+   "cell_type": "code",
    "execution_count": null,
    "metadata": {},
    "outputs": [],
-   "source": [
-    "# Your code here\n"
-   ]
+   "source": []
   }
  ],
  "metadata": {
@@ -219,7 +353,7 @@
    "name": "python",
    "nbconvert_exporter": "python",
    "pygments_lexer": "ipython3",
-   "version": "3.7.2"
+   "version": "3.7.3"
   }
  },
  "nbformat": 4,
